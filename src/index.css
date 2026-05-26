@@ -2,23 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Remove espaços brancos e faz ocupar tela inteira */
 html, body, #root {
   height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #0a0a0a;
+  background-color: #0f0f0f;   /* ou a cor que seu RPG usa */
 }
 
-body {
-  font-family: system-ui, -apple-system, sans-serif;
-}
-
-/* Garante que o app principal ocupe toda a tela */
-#root > div {
-  width: 100% !important;
-  max-width: none !important;
-  height: 100vh !important;
+#root {
+  width: 100%;
 }
