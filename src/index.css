@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #0f0f0f;   /* ou a cor que seu RPG usa */
+@layer base {
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+  }
+
+  body {
+    overflow-x: hidden;           /* impede rolagem horizontal */
+  }
+
+  #root {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-#root {
-  width: 100%;
+/* Permite rolagem só onde for necessário (dentro do app) */
+.overflow-auto, .overflow-y-auto {
+  -webkit-overflow-scrolling: touch; /* melhora rolagem no celular */
 }
