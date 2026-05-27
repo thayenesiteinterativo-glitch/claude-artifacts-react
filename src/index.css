@@ -51,14 +51,24 @@
   }
 
   body {
-    background: #021526;
-    overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
-    color: white;
-  }
+  background: #021526;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  color: #111827;
+}
 
   #root {
     width: 100%;
     min-height: 100vh;
-  }
+  }button,
+input,
+textarea,
+select {
+  color: #111827;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280;
+}
 }
